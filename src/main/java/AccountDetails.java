@@ -26,9 +26,15 @@ public class AccountDetails {
     }
     public void depo(){
         System.out.println("State the amount of your new deposit:");
-        long ammount;
-        ammount = scanner.nextLong();
-        balance = ammount + balance;
+        long ammountadd;
+        ammountadd = scanner.nextLong();
+        balance = ammountadd + balance;
+    }
+    public void draw(){
+        System.out.println("State the amoint of the withdrawal.");
+        long ammountsub;
+        ammountsub = scanner.nextLong();
+        balance = balance - ammountsub;
 
     }
 }

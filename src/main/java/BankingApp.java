@@ -13,10 +13,13 @@ public class BankingApp {
             switch (option) {
                 case 1:
                     account.showAccount();
-
                     break;
                 case 2:
                     account.depo();
+                    break;
+
+                case 3:
+                    account.draw();
                     break;
 
 

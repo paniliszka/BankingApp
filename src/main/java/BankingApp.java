@@ -15,6 +15,9 @@ public class BankingApp {
                     account.showAccount();
 
                     break;
+                case 2:
+                    account.depo();
+                    break;
 
 
             }

@@ -24,18 +24,26 @@ public class AccountDetails {
         System.out.println("Your login name: " + login);
         System.out.println("Current account balance: " + balance);
     }
-    public void depo(){
-        System.out.println("State the amount of your new deposit:");
-        long ammountadd;
-        ammountadd = scanner.nextLong();
-        balance = ammountadd + balance;
-    }
-    public void draw(){
-        System.out.println("State the amoint of the withdrawal.");
-        long ammountsub;
-        ammountsub = scanner.nextLong();
-        balance = balance - ammountsub;
 
+    public void depo() {
+        System.out.println("State the amount of your new deposit:");
+        long ammountAdd;
+        ammountAdd = scanner.nextLong();
+        balance = ammountAdd + balance;
     }
+
+    public void draw() {
+        System.out.println("State the amount of the withdrawal.");
+        long ammountSub;
+        ammountSub = scanner.nextLong();
+        if (ammountSub > balance) {
+            System.out.println("Not enough credit.");
+        } else {
+            balance = balance - ammountSub;
+        }
+    }
+
+
 }
+
 
